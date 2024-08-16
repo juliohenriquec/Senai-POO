@@ -43,16 +43,5 @@ public class Produto {
         this.quantidadeEmEstoque = quantidadeEmEstoque;
     }
 
-    public static void main(String[] args) {
-        Produto produto = new Produto("Notebook", 2500.0, 10);
-
-        System.out.println("Valor total em estoque: R$" + produto.calcularValorTotalEmEstoque());
-
-        if (produto.estaDisponivel()) {
-            System.out.println("Produto disponível em estoque.");
-        } else {
-            System.out.println("Produto indisponível.");
-        }
-    }
 }
 

@@ -1,11 +1,14 @@
 package exercicios;
 
 public class ContaBancaria {
-    private String numeroConta;
+    private int numeroConta;
     private String nomeTitular;
     private double saldo;
 
-    public ContaBancaria(String numeroConta, String nomeTitular, double saldoInicial) {
+    public ContaBancaria(){
+
+    }
+    public ContaBancaria(int numeroConta, String nomeTitular, double saldoInicial) {
         this.numeroConta = numeroConta;
         this.nomeTitular = nomeTitular;
         this.saldo = saldoInicial;
@@ -33,22 +36,12 @@ public class ContaBancaria {
         return saldo;
     }
 
-    public String getNumeroConta() {
+    public int getNumeroConta() {
         return numeroConta;
     }
 
     public String getNomeTitular() {
         return nomeTitular;
-    }
-
-    public static void main(String[] args) {
-        ContaBancaria conta = new ContaBancaria("12345-6", "João Silva", 1000.0);
-
-        conta.depositar(500.0);
-
-        conta.sacar(200.0);
-
-        System.out.println("Saldo atual: R$" + conta.getSaldo());
     }
 }
 
