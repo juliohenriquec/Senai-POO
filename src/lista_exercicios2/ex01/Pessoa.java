@@ -1,6 +1,6 @@
 package lista_exercicios2.ex01;
 
-public class Pessoa {
+public class   Pessoa {
     private String nome;
     private String profissao;
     private int ano_nascimento;
@@ -10,7 +10,6 @@ public class Pessoa {
         int cont  = 0;
         for(int i = ano_nascimento; i <= ano_atual; i++ ){
             if ( i % 4 == 0) {
-                // Se o ano é divisível por 100, ele deve ser divisível por 400 também
                 if (i % 100 == 0) {
                     if (i % 400 == 0){
                         cont ++;
